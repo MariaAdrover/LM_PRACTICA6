@@ -97,7 +97,7 @@ p {
 }
 
 .dropdown-menu {	
-	background-image: url(../img/fondo2.jpg);
+	background-image: url(../img/fondo1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 	width:340px;
@@ -289,7 +289,7 @@ p {
 
 /*---fondo Header de la barra de navegacion---*/
 .navbar-inverse {
-	background-image: url(../img/fondo3.jpg);
+	background-image: url(../img/fondo1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 	text-align:right;
