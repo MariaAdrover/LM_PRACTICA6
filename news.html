@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html lang='es'>
+    <head>
+        <title>ClimbArt</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Descripció curta important. Descripció curta important. Descripció curta important."/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+		<!--Fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Prompt:700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Fira+Sans:800" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Archivo:700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Mukta+Malar:700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:700" rel="stylesheet">
+		<!--Librerias Bootstrap y JQuery-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!--CSS Que medidas pongo?-->
+		<link rel='stylesheet' href='css/news.css'>
+		<!--<link rel='stylesheet' type="text/css" media='screen and (min-width: 768px)' href='css/e768.css'>
+		<link rel='stylesheet' type="text/css" media='screen and (max-width: 767px)' href='css/m767.css'> -->
+        <script src="js/js.js"></script>
+    </head>
+    <body>
+        <div class='jumbotron'>
+			<div class = 'container-fluid'>
+				<img src="img/logo.png" class="img-responsive center-block" alt ='climb'/>
+			</div>
+        </div>
+		<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" id="botonMenu" data-toggle="collapse" data-target="#divMenu">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<img src="img/logo.png" class="img-responsive center-block" alt ='climb'/>
+				</div>
+				<div class="collapse navbar-collapse" id="divMenu">
+					<div class="navbar-header">
+						<a class="navbar-brand" id="inicio" href="#">ClimbArt</a>
+					</div>
+					<ul class="nav navbar-nav">
+						<li class="dropdown active">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">NOTICIAS <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Deportiva     <img src="img/deportiva1.png" cclass="img-responsive center-block" alt ='deportiva'/></a></li>
+								<li><a href="#">Clásica     <img src="img/clasica1.png" cclass="img-responsive center-block" alt ='clasica'/></a></li>
+								<li><a href="#">Alpinismo     <img src="img/alpinismo1.png" cclass="img-responsive center-block" alt ='alpinismo'/></a></li>
+								<li><a href="#">Hielo     <img src="img/hielo1.png" cclass="img-responsive center-block" alt ='hielo'/></a></li>
+								<li><a href="#">Bloque     <img src="img/boulder1.png" cclass="img-responsive center-block" alt ='bloque'/></a></li>
+								<li><a href="#">Competiciones     <img src="img/hielo1.png" cclass="img-responsive center-block" alt ='hielo'/></a></li>
+							</ul>
+						</li>
+						<li><a href="#">ENTREVISTAS</a></li>
+						<li><a class="nav-link" href="#">MATERIAL</a></li> 
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">GALERÍA <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li class="liGaleria"><a href="#">Fotos</a></li>
+									<li class="liGaleria"><a href="#">Vídeos</a></li>
+								</ul>
+							</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right"> 
+						<li><a href="#">FOROS</a></li> 
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-search"></span>&nbsp;<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li class="conTipo">
+									<div class="container-fluid">
+										<form class="form" role="form" method="post" action="login" accept-charset="UTF-8">								
+											<div class="form-group">
+												<div class="input-group"><!--Puedo buscar pulsando en el icono?-->
+													<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+													<input type="text" class="form-control" placeholder="Buscar...">
+												</div>
+											</div>
+										</form>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-log-in"></span> Login <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li class="conTipo">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-12">
+												<form class="form" role="form" method="post" action="login" accept-charset="UTF-8">
+													<div class="form-group">
+														<div class="input-group">
+															<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+															<label for="email"></label>
+															<input type="email" class="form-control" id="email" placeholder="Usuario" required>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+															<label for="pwd"></label>
+															<input type="password" class="form-control" id="pwd" placeholder="Contraseña" required>
+														</div>
+													</div>
+													<div class="checkbox">
+														<label><input type="checkbox">Remember me</label>
+													</div>
+													<button type="submit" id="b3" class="btn btn-default margenBoton">Iniciar sesión<span></span></button>
+												</form>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">												
+												<button type="button" class="btn btn-block margenBoton btn-primary" data-toggle="tooltip" data-placement="bottom" title="Si aún no tienes una cuenta pulsa el botón para crear una">CREAR CUENTA</button>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div id="publicidad1">
+			<a href="#"><img class="img-responsive center-block" src="img\publi.png" alt="publicidad"/></a>
+		</div>
+		<div class="container-fluid" id="contenido">		
+			<div id="publicidad2">
+				<a href="#"><img class="img-responsive center-block" src="img\publi.png" alt="publicidad"/></a>
+			</div>
+			<div>
+				<div class="container-fluid" id="noticias">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class='thumbnail shortNew'>
+								<a href="news1.html" id="news1">
+									<h1 class="text-center">Patxi Usobiaga encadena Pachamama 9a+/b en Oliana</h1>
+									<span class="label label-warning">New!</span>
+									<h6 class="text-right">25/04/2018  13:38</h6>
+									<p class="text-justify">Patxi Usobiaga ha dado un paso más en su trayectoria como escalador. El de Eibar ha conseguido el encadenamiento de Pachamama en Oliana, una vía para la que sugiere 9a+/b, después de que otros repetidores hubieran apuntado que es más dura que la mayoría de líneas de 9a+.</p>
+									<img src="img/n1.jpg" class="img-responsive" alt="Patxi Usobiaga">					
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class='thumbnail shortNew'>
+								<a href="news2.html" id="news2">						
+									<h1 class="text-center">Chris Sharma y‘Big fish’, 8c+/9a de psicobloc en Mallorca</h1>
+									<h6 class="text-right">14/09/2018  13:00</h6>
+									<p class="text-justify">El californiano encadenaba ayer su último proyecto en los acantilados de Sóller (Mallorca). Se trata de la línea de psicobloc “más estética, más grande y más dura” que ha hecho jamás, con la secuencia clave a más de 20 metros sobre el agua.</p>
+									<img src="img/n2.png" class="img-responsive" alt="Chris Sharma"/>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class='thumbnail shortNew'>
+								<a href="#" id="news3">						
+									<h1 class="text-center">Julia Chanourdie logra su segundo 9a con Mollasse'son</h1>
+									<h6 class="text-right">10/04/2018  13:38</h6>
+									<p class="text-justify">La joven francesa Julia Chanourdie (de 21 años) logró el pasado 6 de abril embolsarse la vía Mollasse'son, ubicada en la zona francesa de Mollans-sur-Ouvèze. Se trata de una línea de 25 metros, caracterizada por un comienzo con un bloque duro (alrededor de 7C+) que recorre luego un desplome de resistencia. Fue liberada por Gérome Povreau en abril de 2017, y cuenta también con las repeticiones de otros dos franceses: Romaric Geoffroy y Hugo Parmentier.</p>
+									<img src="img/n3.jpg" class="img-responsive" alt="Patxi Usobiaga">
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class='thumbnail shortNew'>
+								<a href="#" id="news4">
+									<h1 class="text-center">Iker Pou, dieciocho años en el 9a</h1>
+									<h6 class="text-right">21/03/2018  13:38</h6>
+									<p class="text-justify">Iker Pou equipó Esclavos de las redes a principios de año, un 9a en el sector Àtic de Margalef, y acaba de resolverlo. “Lo tenía como comodín”, dice en esta entrevista, donde también habla de un proyecto más duro al que le he dedicado el invierno y que aún tiene pendiente. Hace dieciocho años encadenaba su primer 9a, la mítica Action Direct de Wolfgang Güllich. Pocos escaladores del mundo llevan tantos años como Iker manteniendo este nivel.</p>
+									<img src="img/n4.jpg" class="img-responsive" alt="Iker Pou">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button id = 'boton1' type="button" class="btn btn-success">Cargar Noticias</button>
+			</div>
+		</div>
+		<div id = 'pie'>&#169;2018 Maria Adrover</div>
+    </body>
+</html>

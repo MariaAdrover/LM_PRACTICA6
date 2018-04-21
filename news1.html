@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang='es'>
+    <head>
+        <title>ClimbArt</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Descripció curta important. Descripció curta important. Descripció curta important."/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+		<!--Fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Fira+Sans:800" rel="stylesheet">		
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+		<!--Librerias Bootstrap y JQuery-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!--CSS Que medidas pongo?-->
+		<link rel='stylesheet' href='css/news.css'>
+        <script src="js/js.js"></script>
+    </head>
+    <body>
+        <div class='jumbotron' id='logo'>
+			<div class = 'container-fluid'>
+				<img src="img/logo.png" class="img-responsive center-block" alt ='climb'/>
+			</div>
+        </div>
+		<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" id="botonMenu" data-toggle="collapse" data-target="#divMenu">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<img src="img/logo.png" class="navbar-brand" class="img-responsive center-block" alt ='climb'/>
+				</div>
+				<div class="collapse navbar-collapse" id="divMenu">
+					<div class="navbar-header">
+						<a class="navbar-brand" id="inicio" href="#">ClimbArt</a>
+					</div>
+					<ul class="nav navbar-nav">
+						<li class="dropdown active">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="news.html">+ ARTÍCULOS <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a id="margen" href="news.html">-- ÚLTIMAS NOTICIAS --</a></li>
+								<li><a href="#">Deportiva     <img src="img/deportiva1.png" cclass="img-responsive center-block" alt ='deportiva'/></a></li>
+								<li><a href="#">Clásica     <img src="img/clasica1.png" cclass="img-responsive center-block" alt ='clasica'/></a></li>
+								<li><a href="#">Alpinismo     <img src="img/alpinismo1.png" cclass="img-responsive center-block" alt ='alpinismo'/></a></li>
+								<li><a href="#">Hielo     <img src="img/hielo1.png" cclass="img-responsive center-block" alt ='hielo'/></a></li>
+								<li><a href="#">Bloque     <img src="img/boulder1.png" cclass="img-responsive center-block" alt ='bloque'/></a></li>
+								<li><a href="#">Competiciones     <img src="img/hielo1.png" cclass="img-responsive center-block" alt ='hielo'/></a></li>
+							</ul>
+						</li>
+						<li><a href="#">ENTREVISTAS</a></li>
+						<li><a class="nav-link" href="#">MATERIAL</a></li> 
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">GALERÍA <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li class="liGaleria"><a href="#">Fotos</a></li>
+									<li class="liGaleria"><a href="#">Vídeos</a></li>
+								</ul>
+							</a>
+						</li> 
+					</ul>
+					<ul class="nav navbar-nav navbar-right"> 
+						<li><a href="#">FOROS</a></li> 
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-search"></span>&nbsp;<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li class="liGaleria">
+									<div class="container-fluid">
+										<form class="form" role="form" method="post" action="login" accept-charset="UTF-8">								
+											<div class="form-group">
+												<div class="input-group">
+													<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+													<input type="text" class="form-control" placeholder="Buscar...">
+												</div>
+											</div>
+										</form>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-log-in"></span> Login <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li class="conTipo">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-12">
+												<form class="form" role="form" method="post" action="login" accept-charset="UTF-8">
+													<div class="form-group">
+														<div class="input-group">
+															<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+															<label for="email"></label>
+															<input type="email" class="form-control" id="email" placeholder="Usuario" >
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+															<label for="pwd"></label>
+															<input type="password" class="form-control" id="pwd" placeholder="Contraseña" >
+														</div>
+													</div>
+													<div class="checkbox">
+														<label><input type="checkbox">Remember me</label>
+													</div>
+													<button type="submit" id="b3" class="btn btn-default margenBoton">Iniciar sesión<span></span></button>
+												</form>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">												
+												<button type="button" class="btn btn-block btn-primary margenBoton" data-toggle="tooltip" data-placement="bottom" title="Si aún no tienes una cuenta pulsa el botón para crear una">CREAR CUENTA</button>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div id="publicidad1">
+			<a href="#"><img class="img-responsive center-block" src="img\publi.png" alt="publicidad"/></a>
+		</div>
+		<div class="container-fluid">		
+			<div id="publicidad2">
+				<a href="#"><img class="img-responsive center-block" src="img\publi.png" alt="publicidad"/></a>
+			</div>
+			<div id="noticiaCompleta">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class='thumbnail new'>
+							<h1 class="text-center"><b>Patxi Usobiaga encadena Pachamama 9a+/b en Oliana</b></h1>
+							<p class="text-justify">Ha conseguido realizar la vía más dura de su carrera con esta línea de Chris Sharma. 
+							Es el cuarto escalador español en alcanzar este grado de dificultad. Desnivel.com - Martes, 14 de Noviembre de 2017 - Actualizado a las 12:34h.</p>
+							<img src="img/n1.jpg" class="img-responsive" alt="Patxi Usobiaga">
+							<h6 class="text-right">14/04/2018  13:38</h6>
+							<p class="text-justify">Patxi Usobiaga ha dado un paso más en su trayectoria como escalador. El de Eibar ha conseguido el encadenamiento de Pachamama en Oliana, una vía para la que sugiere 9a+/b, después de que otros repetidores hubieran apuntado que es más dura que la mayoría de líneas de 9a+.</p>
+							<p class="text-justify">Él mismo lo anunciaba en sus redes sociales con un escueto mensaje: “La batalla terminó. Pachamama 9a+/b top”. Texto al que acompañaba una espectacular foto en uno de los numerosos intentos en la vía.</p>
+							<p class="text-justify">Se da la circunstancia de que Patxi Usobiaga había intentado por primera vez Pachamama años atrás, incluso antes de abandonar la competición al máximo nivel. Entonces, la vía se le resistió. Y el posterior accidente de tráfico en que se produjo una lesión en las cervicales que lo llevaría a dejar la escalada por un tiempo parecían confabular para que se olvidara definitivamente de ella.</p>
+							<p class="text-justify">Sin embargo, en los últimos tiempos, Patxi Usobiaga ha demostrado que vuelve a ser el de antes... o incluso mejor, según se desprende de sus encadenamientos en roca. Después de regresar al noveno grado en 2014 con Celedon 9a en Ilarduia, ha convertido Oliana en su particular patio de juegos y los resultados han ido cayendo sin prisa pero sin pausa. En marzo de este año dejó la primera muestra con la primera ascensión de Patxitxulo 9a/+. Unas semanas más tarde, en abril, conseguía recuperar su máximo grado de antes de la lesión con Papichulo 9a+. Y ahora da un paso más adelante con la repetición de Pachamama 9a+/b</p>
+							<p class="text-justify">De hecho, Patxi ya nos adelantó en la entrevista que tuvimos con él hace unos meses que tenía entre ceja y ceja cuatro vías en el rango del 9a+ en Oliana: ya ha tachado Papichulo y Pachamama, pero todavía le restan Joe mama y Power inverter. Tampoco sería de extrañar que ahora quisiera ir un poco más allá, habida cuenta que Oliana alberga una de las mayores concentraciones de vías de 9b del mundo, con Chaxiraxi, Fight or flight y Mamichula, además de la mítica La dura dura 9b+</p>
+							<div class="embed-responsive embed-responsive-16by9">
+								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9zVOQn35Lv4"></iframe>
+							</div>
+							<h2>Una línea con historia</h2>
+							<p class="text-justify">Pachamama es una línea que ya acumula cierta historia. Fue una de las creaciones de Chris Sharma en el Contrafort del Rumbau. El mismo californiano realizó la primera ascensión, allá por 2009. Pasaron más de dos años hasta que Sachi Amma llevara a cabo la primera repetición, a finales de 2011. Y otros cuatro para la segunda muesca, a cargo de Ramon Julián.</p>
+							<p class="text-justify">Este año 2017, la línea parece haber cobrado vida y protagonismo, con hasta cuatro nuevas repeticiones. Jakob Schubert estrenó el año con Pachamama en enero; Adam Ondra la hizo en febrero, y el turno de Jonathan Siegrist llegó en abril. La de Patxi Usobiaga es la sexta repetición.</p>
+							<p class="text-justify">En cuanto al grado, si bien inicialmente surgió como 9a+, los repetidores y otros escaladores que la han probado sin llegar a encadenarla han ido situándola más allá de ese grado, en un punto intermedio entre el 9a+ y el 9b, que correspondería al 9a+/b actualmente consensuado</p>
+							<h2>Cuarto español en el grado</h2>
+							<p class="text-justify">Con la propuesta de grado de 9a+/b, Patxi Usobiaga se incorpora a un selectísimo grupo de roqueros de nuestro país. Si ya son escasamente una docena los que han conseguido encadenar 9a+, se pueden contar con los dedos de una mano los que han pasado de ese grado</p>
+							<p class="text-justify">La primera vez que alguien habló de ello fue Bernabé Fernández en 2003 con su polémico y nunca demostrado encadenamiento de Chilam balam en Villanueva del Rosario, para el que propuso 9b+ (las realizaciones recientes lo sitúan en el 9a+/b). Posteriormente, en 2007, llegó la propuesta de 9b de Dani Andrada con su híbrida Ali Hulk extension sit start en la cueva de Alí Babá de Rodellar.</p>
+							<p class="text-justify">El siguiente en subirse al carro fue Ramon Julián, quien en 2012 realizó la primera ascensión de Catxasa R2 para la que propuso 9a+/b en Santa Linya. Y en 2015, le correspondía a Edu Marín con Chilam balam 9a+/b.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id = 'pie'>&#169;2018 Maria Adrover</div>
+    </body>	
+</html>

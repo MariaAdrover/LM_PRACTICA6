@@ -1,0 +1,497 @@
+@media(min-width:768px) {
+html, body{
+	height:100%;
+	padding:0px;
+	margin:0px;
+	font-family: 'Prompt', sans-serif;
+}
+
+.navbar {
+	font-family: 'Montserrat', sans-serif;	
+}
+
+h1 {
+	color:white;
+	background-color:#333;
+}
+
+p {
+	font-family: 'Prompt', sans-serif;
+}
+
+.jumbotron {
+	background-image: url(../img/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+	text-align:center;
+	margin-bottom:0px;
+	padding-top:40px;
+	padding-bottom:40px;
+}
+
+.jumbotron img {
+	max-height:150px;
+}
+
+/*---Fijar menu al hacer scroll---*/
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999; !important
+}
+
+.affix + .container-fluid {
+    padding-top: 70px;
+}
+
+/*imagen al lado del boton - logo*/
+.navbar-header img {
+	display:none;
+}
+
+/*---ClimbArt---*/
+#inicio {
+	color:orange;
+}
+
+#inicio:hover {
+	color:white;
+}
+
+/*---menus desplegables---*/
+.navbar-inverse .navbar-nav .open .dropdown-menu>li {
+	border-bottom:dotted;	
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+	display:block;
+	color:black;
+	text-decoration:none;
+	text-indent: 20px;	
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+	/*background-color:#333;*/
+	color:white;
+	background-color:transparent;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a>img {
+	height:50px;
+	max-height:50px;
+	padding:5px;	
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a>img:hover {
+    -ms-transform: scale(1.5, 1.5); /* IE 9 */
+    -webkit-transform: scale(1.5, 1.5); /* Safari */
+    transform: scale(1.5, 1.5);		
+}
+
+#margen { /* ------------ NO CAMBIAR ORDEN. DESPUÉS DE .tipo a{} --------------*/
+	padding-top:16px;
+	padding-bottom:16px;
+	text-align:center;
+	text-indent:0;
+}
+
+.dropdown-menu {	
+	background-image: url(../img/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	width:340px;
+}
+
+.conTipo {
+	margin-top:15px;
+}
+
+.liGaleria {
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+/*---------------------*/
+
+.margenBoton {
+	margin-bottom:15px;
+}
+
+.thumbnail {
+	padding:18px;
+	border:2px solid #ddd;
+	border-radius:4px;
+}
+
+.new, .shortNew {
+	background-color:#f8faf9;
+}
+
+.shortNew:hover {
+	opacity:0.7;
+	background-color:#f0f8fa;
+}
+
+#noticias, #noticiaCompleta {
+	padding-right:340px;
+}
+
+#noticias a {
+    text-decoration: none;
+	color: black;
+}
+
+#noticias a *:active {
+    text-decoration: none;
+	color: black;
+}
+
+#noticias a *:link {
+    text-decoration: none;
+	color: black;
+}
+
+#noticias a *:visited {
+}
+
+.col-sm-6, .col-sm-12 {
+	padding-right:0;
+}
+
+#publicidad1 {
+	display:none;
+}
+
+#publicidad2 {
+	border-left:dotted;
+	display:block; 
+	position:absolute; 
+	right:0px; 
+	width:320px;
+	padding:10px;
+}
+
+#publicidad2 img{
+	max-width:300px;
+	
+}
+
+#publicidad2:hover {	
+	opacity:0.7;
+}
+
+/*--------------------------------*/
+
+#b3 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  font-family: 'Glyphicons Halflings';
+}
+#b3 span:after {
+  font-family: 'Glyphicons Halflings';
+  content: '\e171';
+  position: absolute;
+  opacity: 0;
+  top: -13px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#b3:hover span {
+  padding-right: 25px;
+}
+
+#b3:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#b3 {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+/*-------------------------------*/
+
+#pie {
+	position:fixed;
+	bottom:0;
+	width:100%;
+	color:white;
+	background-color:#333;
+	text-align:right;
+	font-family:Verdana;
+	font-size:0.7em;
+	padding-right:2%;
+}
+
+#boton1 {
+  margin:50px;
+}
+}
+
+
+/* -------------------  MOVIL  ----------------------*/
+
+@media(max-width:767px) {
+	
+html, body{
+	height:100%;
+	padding:0px;
+	margin:0px;
+	font-family: 'Prompt', sans-serif;
+}
+
+.navbar {
+	font-family: 'Montserrat', sans-serif;	
+}
+
+h1 {
+	color:white;
+	background-color:#333;
+}
+
+p {
+	font-family: 'Prompt', sans-serif;
+}
+
+.jumbotron {
+	display:none;
+}
+
+/*---Fijar menu al hacer scroll---*/
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+
+.affix + .container-fluid {
+    padding-top: 70px;
+}
+
+/*---boton oculto del menu. Header de la barra de navegacion---*/
+#botonMenu {
+	float:left;	
+    background-color: #333;
+	margin-top:28px;
+	margin-left:16px;
+}
+
+/*imagen al lado del boton - logo. Header de la barra de navegacion*/
+.navbar-header img {
+	height:100px;
+	padding:15px 15px;
+}
+
+/*---fondo Header de la barra de navegacion---*/
+.navbar-inverse {
+	background-image: url(../img/fondo3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	text-align:right;
+	border:none;
+	border-bottom:solid;
+	border-bottom-width:4px;
+	border-color:white;
+	margin-bottom:0;
+	outline-style:solid;
+	/*outline-offset:4px;*/
+	outline-width:1.5px;
+	outline-color:#333;
+}
+
+/*---contenedor barra de navegacion---*/
+#divMenu {
+	padding:0;
+	border:none;
+}
+
+/*---Contenidos barra de navegacion---*/
+#divMenu .navbar-header {
+	text-align:left;
+}
+
+#divMenu .navbar-nav {
+	margin:0;
+}
+
+/*---ClimbArt en el header del menu---*/
+#inicio {
+	color:orange;
+	display:block;
+	width:100%;
+	background-color:#333;
+}
+
+#inicio:hover {
+	color:white;
+}
+/*---menu---*/
+
+.navbar-inverse .navbar-nav>li>a {
+	color:#333;
+}
+
+.navbar-inverse .navbar_collapse {
+	background-color:white;
+    opacity:0.5;
+}
+
+/*---menus desplegables---*/
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li {
+	border-bottom:dotted;	
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+	display:block;
+	color:black;
+	text-decoration:none;
+	text-indent: 20px;	
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+	/*background-color:#333;*/
+	color:white;	
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a>img {
+	height:50px;
+	max-height:50px;
+	padding:5px;	
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a>img:hover {
+    -ms-transform: scale(1.5, 1.5); /* IE 9 */
+    -webkit-transform: scale(1.5, 1.5); /* Safari */
+    transform: scale(1.5, 1.5);		
+}
+
+#margen { /* ------------ NO CAMBIAR ORDEN. DESPUÉS DE .tipo a{} --------------*/
+	padding-top:16px;
+	padding-bottom:16px;
+	text-align:center;
+	text-indent:0;
+}
+
+.liGaleria {
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+/*---------------------*/
+
+.margenBoton {
+	margin-bottom:15px;
+}
+
+.thumbnail {
+	padding:8px;
+	border:1.3px solid #ddd;
+	border-radius:4px;
+}
+
+.new, .shortNew {
+	background-color:#f8faf9;
+}
+
+.shortNew:hover {
+	opacity:0.7;
+	background-color:#f0f8fa;
+}
+
+#contenido {
+	padding:0;
+}
+
+#noticias a {
+    text-decoration: none;
+	color: black;
+}
+
+#noticias a *:active {
+    text-decoration: none;
+	color: black;
+}
+
+#noticias a *:link {
+    text-decoration: none;
+	color: black;
+}
+
+#noticias a *:visited {
+}
+
+/*revisar medidas*/
+#publicidad1 {
+	padding:4%;
+	margin-bottom:4%;
+	border-bottom:dotted;
+	display:block;
+	height:320px;
+}
+
+#publicidad1:hover {	
+	opacity:0.7;
+}
+
+#publicidad2 {
+	display:none;
+}
+
+/*--------------------------------*/
+
+#b3 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  font-family: 'Glyphicons Halflings';
+}
+
+#b3 span:after {
+  font-family: 'Glyphicons Halflings';
+  content: '\e171';
+  position: absolute;
+  opacity: 0;
+  top: -13px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#b3:hover span {
+  padding-right: 25px;
+}
+
+#b3:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#b3 {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+/*-------------------------------*/
+
+#boton1 {
+  margin:50px;
+}
+
+#pie {
+	position:fixed;
+	bottom:0;
+	width:100%;
+	color:white;
+	background-color:#333;
+	text-align:right;
+	font-family:Verdana;
+	font-size:0.7em;
+	padding-right:2%;
+}	
+} 
