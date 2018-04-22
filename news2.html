@@ -3,7 +3,7 @@
     <head>
         <title>ClimbArt</title>
         <meta charset="utf-8">
-        <meta name="description" content="Descripció curta important. Descripció curta important. Descripció curta important."/>
+        <meta name="description" content="Artículo sobre Chris Sharma"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 		<!--Fonts-->
@@ -19,9 +19,9 @@
         <script src="js/js.js"></script>
     </head>
     <body>
-        <div class='jumbotron' id='logo'>
+        <div class='jumbotron'>
 			<div class = 'container-fluid'>
-				<img src="img/climb8.png" class="img-responsive center-block" alt ='climb'/>
+				<img src="img/climb8.png" id="logo" class="img-responsive center-block" alt ='climb'/>
 			</div>
         </div>
 		<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
@@ -125,12 +125,16 @@
 				</div>
 			</div>
 		</nav>
-		<div id="publicidad1">
-			<a href="#"><img class="img-responsive center-block" src="img\publi.png" alt="publicidad"/></a>
+		<div id="publicidad1" class="container-fluid">
+			<div id="frame1" class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" src="file:///C:/Users/miaad/Desktop/LM_P6_v0.1/publicidad1.html"></iframe>
+			</div>
 		</div>
 		<div class="container-fluid">		
 			<div id="publicidad2">
-				<a href="#"><img class="img-responsive center-block" src="img\publi.png" alt="publicidad"/></a>
+				<div id="frame2" class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="file:///C:/Users/miaad/Desktop/LM_P6_v0.1/publicidad2.html"></iframe>
+				</div>
 			</div>
 			<div id="noticiaCompleta">
 				<div class="row">
@@ -158,6 +162,7 @@
 				</div>
 			</div>
 		</div>
-	<div id = 'pie'>&#169;2018 Maria Adrover</div>
+		<div id="botonVolver" data-toggle="tooltip" data-placement="left" title="Volver arriba"><img src="img/volver.png" alt="menu"></div>
+		<div id = 'pie'>&#169;2018 Maria Adrover</div>
     </body>
 </html>
