@@ -3,20 +3,24 @@ html, body{
 	height:100%;
 	padding:0px;
 	margin:0px;
-	font-family: 'Prompt', sans-serif;
+	font-family: 'Prompt', sans-serif; /*------------------------------REVISAR----------------------------*/
+	 /*------------------------------REVISAR----------------------------*/
 }
 
 .navbar {
-	font-family: 'Montserrat', sans-serif;	
+	font-family: 'Prompt', sans-serif; /*------------------------------REVISAR----------------------------*/
+	font-size:1.2vw;	
 }
 
 h1 {
 	color:white;
 	background-color:#333;
+	font-size:2.7vw; /*------------------------------REVISAR----------------------------*/
 }
 
 p {
-	font-family: 'Prompt', sans-serif;
+	font-family: 'Prompt', sans-serif; /*------------------------------REVISAR----------------------------*/
+	font-size:1.2vw; /*------------------------------REVISAR----------------------------*/
 }
 
 .jumbotron {
@@ -169,6 +173,7 @@ p {
 	position:absolute; 
 	right:0px; 
 	width:320px;
+	height:615px;
 	padding:10px;
 }
 
@@ -179,6 +184,12 @@ p {
 
 #publicidad2:hover {	
 	opacity:0.7;
+}
+
+#frame2 {
+	height:100%;
+	max-height:100%;
+	border:solid;
 }
 
 /*--------------------------------*/
@@ -229,8 +240,26 @@ p {
 }
 
 #boton1 {
-  margin:50px;
+	width:calc(100% - 340px);
+	margin-left: 14px;	
+	margin-bottom: 30px;
 }
+
+#botonVolver {
+	display:none;
+	position:fixed;
+	height:10%;
+	bottom:10%;
+	right:2%;
+	z-index:999;
+    cursor: pointer;
+}
+
+#botonVolver img {
+	height:100%;
+	max-height:100%;
+}
+
 }
 
 
@@ -246,7 +275,7 @@ html, body{
 }
 
 .navbar {
-	font-family: 'Montserrat', sans-serif;	
+	font-family: 'Prompt', sans-serif;	
 }
 
 h1 {
@@ -428,11 +457,28 @@ p {
 
 /*revisar medidas*/
 #publicidad1 {
-	padding:4%;
-	margin-bottom:4%;
-	border-bottom:dotted;
+	padding:0;
+	margin-top:10px;
+	margin-bottom:10px;
+	/*border-bottom:dotted;*/
 	display:block;
-	height:320px;
+	width:320px;
+	height:90px;
+}
+
+#frame1 {
+	/*height:100%;
+	max-height:100%;
+	border:solid;*/
+	padding-bottom:28%;
+}
+
+#frame1 iframe {
+	width:320;
+	heigth:90px;
+	border:solid;
+	border-color:#333;
+	border-bottom-width:1px;
 }
 
 #publicidad1:hover {	
@@ -480,7 +526,24 @@ p {
 /*-------------------------------*/
 
 #boton1 {
-  margin:50px;
+	width:calc(100% - 28px);
+	margin-left: 14px;	
+	margin-bottom: 30px;
+}
+
+#botonVolver {
+	display:none;
+	position:fixed;
+	height:4%;
+	bottom:8%;
+	right:1%;
+	z-index:999;
+    cursor: pointer;
+}
+
+#botonVolver img {
+	height:100%;
+	max-height:100%;
 }
 
 #pie {
