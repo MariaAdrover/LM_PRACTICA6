@@ -9,7 +9,7 @@ Página de noticias
 * Añadidos los archivos data1.json, data2.json y data3.json, cada uno de ellos con los datos para presentar dos noticias más, que se cargarán al hacer scroll hacia abajo al llegar al final de la página o al pulsar el botón de VER MÁS NOTICIAS de la página news.html.
 * Añadido JavaScript con el código para:
   * Activar tooltips.
-  * Desactivar el botón de submit del formulario de Login (```javascript return false;```).
+  * Desactivar el botón de submit del formulario de Login (```return false;```).
   * Evento al pulsar el botón de VER MÁS NOTICIAS (```$(#boton).click();```): cargar dos noticias desde el archivo .json correspondiente.
   * ADAPTABILIDAD PARA PC: 
     * Evento al redimensionar la ventana (```$(window).resize();```): al cargar la página, se carga el CSS para dispositivos @media(min-width:768px), pero si se redimensiona la ventana, se adapta el tamaño de la cabecera de la página y del texto.
