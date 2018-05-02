@@ -1,18 +1,24 @@
 ﻿<!DOCTYPE html>
 <html lang='es'>
     <head>
-        <title>ClimbArt</title>
+        <title>ClimbArt-NOTICIAS</title>
         <meta charset="utf-8">
-        <meta name="description" content="Noticias sobre escalada"/>
+        <meta name="description" content="Últimas noticias sobre escalada"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+		<!-- OGP -->
+		<meta property="og:site_name" content="ClimbArt">
+		<meta property="og:url" content="https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.2/news.html">
+		<meta property="og:title" content="ClimbArt-NOTICIAS">
+		<meta property="og:image" content="img/logo.png">
+		<meta property="og:description" content="Últimas noticias sobre escalada">
 		<!--Fonts-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 		<link href="https://fonts.googleapis.com/css?family=Prompt:400,700" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400" rel="stylesheet">
+		<!--<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Archivo:700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Mukta+Malar:700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Poppins:700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:700" rel="stylesheet">-->
 		<!--Librerias Bootstrap y JQuery-->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -146,9 +152,9 @@
 						<div class="col-sm-6">
 							<div class='thumbnail shortNew'>
 								<a href="news1.html" id="news1">
-									<h1 class="text-center"><b>Patxi Usobiaga encadena Pachamama 9a+/b en Oliana</b></h1>
+									<h2 class="text-center">Patxi Usobiaga encadena Pachamama 9a+/b en Oliana</h2>
 									<span class="label label-warning">New!</span>
-									<h6 class="text-right">25/04/2018  13:38</h6>
+									<p id="fecha" class="text-right">25/04/2018  13:38</p>
 									<p class="text-justify">Patxi Usobiaga ha dado un paso más en su trayectoria como escalador. El de Eibar ha conseguido el encadenamiento de Pachamama en Oliana, una vía para la que sugiere 9a+/b, después de que otros repetidores hubieran apuntado que es más dura que la mayoría de líneas de 9a+.</p>
 									<img src="img/n1.jpg" class="img-responsive" alt="Patxi Usobiaga">					
 								</a>
@@ -157,8 +163,8 @@
 						<div class="col-sm-6">
 							<div class='thumbnail shortNew'>
 								<a href="news2.html" id="news2">						
-									<h1 class="text-center"><b>Chris Sharma y‘Big fish’, 8c+/9a de psicobloc en Mallorca</b></h1>
-									<h6 class="text-right">14/04/2018  13:00</h6>
+									<h2 class="text-center">Chris Sharma y‘Big fish’, 8c+/9a de psicobloc en Mallorca</h2>
+									<p id="fecha" class="text-right">14/04/2018  13:00</p>
 									<p class="text-justify">El californiano encadenaba ayer su último proyecto en los acantilados de Sóller (Mallorca). Se trata de la línea de psicobloc “más estética, más grande y más dura” que ha hecho jamás, con la secuencia clave a más de 20 metros sobre el agua.</p>
 									<img src="img/n2.png" class="img-responsive" alt="Chris Sharma"/>
 								</a>
@@ -169,8 +175,8 @@
 						<div class="col-sm-6">
 							<div class='thumbnail shortNew'>
 								<a href="#" id="news3">						
-									<h1 class="text-center">Jeff Mercier D15 y Angelika Rainer D14+ en Tomorrow’s World</h1>
-									<h6 class="text-right">10/04/2018  10:08</h6>
+									<h2 class="text-center">Jeff Mercier D15 y Angelika Rainer D14+ en Tomorrow’s World</h2>
+									<p id="fecha" class="text-right">10/04/2018  10:08</p>
 									<p class="text-justify">El francés y la italiana se preparan para la llegada del hielo escalando lo más duro del drytooling mundial en la famosa cueva de Dolomitas. Encadenan A line above the sky D15 y Je ne sais quoi D14+ respectivamente.</p>
 									<img src="img/n3.jpg" class="img-responsive" alt="Jeff Mercier">
 								</a>
@@ -179,8 +185,8 @@
 						<div class="col-sm-6">
 							<div class='thumbnail shortNew'>
 								<a href="#" id="news4">
-									<h1 class="text-center">Iker Pou, dieciocho años en el 9a</h1>
-									<h6 class="text-right">21/03/2018  08:55</h6>
+									<h2 class="text-center">Iker Pou, dieciocho años en el 9a</h2>
+									<p id="fecha" class="text-right">21/03/2018  08:55</p>
 									<p class="text-justify">Iker Pou equipó `Esclavos de las redes´ a principios de año, un 9a en el sector Àtic de Margalef, y acaba de resolverlo. “Lo tenía como comodín”, dice en esta entrevista, donde también habla de un proyecto más duro al que le he dedicado el invierno y que aún tiene pendiente. Hace dieciocho años encadenaba su primer 9a, la mítica Action Direct de Wolfgang Güllich. Pocos escaladores del mundo llevan tantos años como Iker manteniendo este nivel.</p>
 									<img src="img/n4.jpg" class="img-responsive" alt="Iker Pou">
 								</a>
@@ -191,7 +197,7 @@
 				<button id = 'boton1' type="button" class="btn btn-block btn-primary">VER MÁS NOTICIAS</button>
 			</div>
 		</div>
-		<div id="botonVolver" data-toggle="tooltip" data-placement="left" title="Volver arriba"><img src="img/volver.png" alt="menu"></div>
+		<div id="botonVolver" data-toggle="tooltip" data-placement="right" title="Volver arriba"><img src="img/up.png" alt="menu"></div>
 		<div id = 'pie'>&#169;2018 Maria Adrover</div>
     </body>
 </html>

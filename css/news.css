@@ -9,18 +9,26 @@ html, body{
 
 .navbar {
 	font-family: 'Prompt', sans-serif; /*------------------------------REVISAR----------------------------*/
-	font-size:1.2vw;	
+	font-size:1.2em;	
 }
 
-h1 {
+h1, h2 {
 	color:white;
 	background-color:#333;
-	font-size:2.7vw; /*------------------------------REVISAR----------------------------*/
+	font-size:2.7em; /*------------------------------REVISAR----------------------------*/
+}
+
+h3 {
+	font-size:2em;
 }
 
 p {
 	font-family: 'Prompt', sans-serif; /*------------------------------REVISAR----------------------------*/
-	font-size:1.2vw; /*------------------------------REVISAR----------------------------*/
+	font-size:1.2em; /*------------------------------REVISAR----------------------------*/
+}
+
+#fecha {
+	font-size:0.9em;	
 }
 
 .jumbotron {
@@ -133,8 +141,9 @@ p {
 }
 
 .shortNew:hover {
-	opacity:0.7;
-	background-color:#f0f8fa;
+    -ms-transform: scale(1.02, 1.02); /* IE 9 */
+    -webkit-transform: scale(1.02, 1.02); /* Safari */
+    transform: scale(1.02, 1.02);	
 }
 
 #noticias, #noticiaCompleta {
@@ -262,6 +271,63 @@ p {
 
 }
 
+/*===================================================================================*/
+
+@media(max-width:767px) and (orientation:portrait){
+	
+
+#boton1 {
+	width:calc(100% - 28px);
+	margin-left: 14px;	
+	margin-bottom: 18%;
+}
+	
+#botonVolver {
+	display:none;
+	position:fixed;
+	height:4%;
+	bottom:4%;
+	left:5%;
+	z-index:999;
+    cursor: pointer;
+}
+
+#botonVolver img {
+	height:100%;
+	max-height:100%;
+}
+	
+}
+
+/*===================================================================================*/
+
+@media(max-width:767px) and (orientation:landscape){
+	
+
+#boton1 {
+	width:calc(100% - 28px);
+	margin-left: 14px;	
+	margin-bottom: 12%;
+}
+	
+#botonVolver {
+	display:none;
+	position:fixed;
+	height:8%;
+	bottom:8%;
+	left:3%;
+	z-index:999;
+    cursor: pointer;
+}
+
+#botonVolver img {
+	height:100%;
+	max-height:100%;
+}
+}
+
+/*===================================================================================*/
+
 
 /* -------------------  MOVIL  ----------------------*/
 
@@ -278,13 +344,22 @@ html, body{
 	font-family: 'Prompt', sans-serif;	
 }
 
-h1 {
+h1, h2 {
 	color:white;
 	background-color:#333;
 }
 
+h3 {
+	font-size:1.8em;
+}
+
 p {
 	font-family: 'Prompt', sans-serif;
+	font-size:1.1em;
+}
+
+#fecha {
+	font-size:0.8em;	
 }
 
 .jumbotron {
@@ -428,10 +503,10 @@ p {
 	background-color:#f8faf9;
 }
 
-.shortNew:hover {
+/*.shortNew:hover {
 	opacity:0.7;
 	background-color:#f0f8fa;
-}
+}*/
 
 #contenido {
 	padding:0;
@@ -525,26 +600,7 @@ p {
 
 /*-------------------------------*/
 
-#boton1 {
-	width:calc(100% - 28px);
-	margin-left: 14px;	
-	margin-bottom: 30px;
-}
 
-#botonVolver {
-	display:none;
-	position:fixed;
-	height:4%;
-	bottom:8%;
-	right:1%;
-	z-index:999;
-    cursor: pointer;
-}
-
-#botonVolver img {
-	height:100%;
-	max-height:100%;
-}
 
 #pie {
 	position:fixed;

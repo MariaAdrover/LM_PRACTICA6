@@ -11,27 +11,16 @@ $(document).ready(function() {
 		return false;
 	});
 	
-	/*if (window.matchMedia('(max-height: 666px)').matches) {
-		$('#login').attr('class', 'dropup');
-		$('#login>ul').css('top', '-239px');
-		$('#login>ul').css('position', 'absolute');
-	}*/
-	
 	if (window.matchMedia('(max-height: 666px)').matches) {		
 		$('nav').attr('data-spy', '');
 		$('#botonVolver').css('display','block');
 	}
 	
-	if ($(window).width()< 768) {
+	/*if ($(window).width()< 768) {
 		if ($(window).height()<667) {
 		$('nav').attr('data-spy', '');
 		$('#botonVolver').css('display','block');
 		}
-	}
-	
-	/*if ($(window).height()>=667) {
-		$('nav').attr('data-spy', 'affix');
-		$('#botonVolver').css('display','none');
 	}*/
 	
 	/*Pulsar boton noticias*/
@@ -58,7 +47,8 @@ $(document).ready(function() {
 	/*Scroll, al llegar al final de la pagina*/
 	/* ----------- PONER SOLO EN LA PAGINA PRINCIPAL ------------------------*/
 	$(window).scroll(function() {
-		if ($(window).scrollTop() + $(window).height() +10 >= $(document).height()) { /*-------REVISAR FORMULA-----*/
+		if (location.href=='file:///C:/Users/miaad/Desktop/LM_P6_v0.1/news.html') {
+		if ($(window).scrollTop() + $(window).height()>= $(document).height()) { /*-------REVISAR FORMULA-----*/
 			if (data < 4) {
 				$.getJSON( 'https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.2/data/data' + data + '.json', function(jsonObject) {
 				afegirBloc(jsonObject);
@@ -68,11 +58,12 @@ $(document).ready(function() {
 				$('#boton1').text('NO HAY MÁS NOTICIAS');
 			}			
 		}
+		}
 	});	
 	
 	/*Evento al redimensionar la ventana*/
 	$(window).resize(function(){
-		if ($(window).width()>767 && $(window).width()< 950){ /*------Afegir ...if (window.matchMedia('(min-width: 768px)').matches) && window.matchMedia('(max-width: 949px)').matches) {}*/
+		if ($(window).width()>767 && $(window).width()< 950){ /*------Afegir? ...if (window.matchMedia('(min-width: 768px)').matches) && window.matchMedia('(max-width: 949px)').matches) {}*/
 			$('#logo').css('max-height','100px');
 			$('.jumbotron').css('padding-top','20px');
 			$('.jumbotron').css('padding-bottom','20px');
@@ -98,8 +89,8 @@ function afegirBloc(jsonObject) {
 			'<div class="col-sm-6">'
 				+ '<div class="thumbnail shortNew">'
 					+ '<a href="#">'
-						+ '<h1 class="text-center">' + item.titulo + '</h1>'
-						+ '<h6 class="text-right">' + item.fecha + '</h6>'
+						+ '<h2 class="text-center">' + item.titulo + '</h2>'
+						+ '<p id="fecha" class="text-right">' + item.fecha + '</p>'
 						+ '<p class="text-justify">' + item.texto + '</p>'
 						+ '<img src="' + item.imagen + '" class="img-responsive" alt="' + item.alt + '">'					
 					+ '</a>'
