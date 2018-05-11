@@ -1,4 +1,3 @@
-@media(min-width:768px) {
 html, body{
 	height:100%;
 	padding:0px;
@@ -6,51 +5,17 @@ html, body{
 	font-family: 'Prompt', sans-serif;
 }
 
-.navbar {
-	font-family: 'Montserrat', sans-serif;	
-}
-
-h1 {
-	color:white;
-	background-color:#333;
-}
-
-p {
-	font-family: 'Prompt', sans-serif;
-}
-
-.jumbotron {
-	background-image: url(../img/fondo1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right top;
-	text-align:center;
-	margin-bottom:0px;
-	padding-top:40px;
-	padding-bottom:40px;
-}
-
-.jumbotron img {
-	max-height:150px;
-}
-
 /*---Fijar menu al hacer scroll---*/
 .affix {
     top: 0;
     width: 100%;
-    z-index: 9999; !important
+    z-index: 999; !important
 }
 
 .affix + .container-fluid {
-    padding-top: 70px;
+    /*padding-top: 70px;  ------------       revisar valor?*/ 
 }
 
-/*imagen al lado del boton - logo*/
-.navbar-header img {
-	display:none;
-}
-
-/*---ClimbArt---*/
 #inicio {
 	color:orange;
 }
@@ -72,7 +37,6 @@ p {
 }
 
 .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
-	/*background-color:#333;*/
 	color:white;
 	background-color:transparent;
 }
@@ -87,6 +51,207 @@ p {
     -ms-transform: scale(1.5, 1.5); /* IE 9 */
     -webkit-transform: scale(1.5, 1.5); /* Safari */
     transform: scale(1.5, 1.5);		
+}
+
+.liGaleria {
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.margenBoton {
+	margin-bottom:15px;
+}
+
+.new, .shortNew {
+	background-color:#f8faf9;
+}
+
+.shortNew img {
+	width:100%;
+}
+
+#noticias a {
+    text-decoration: none;
+	color: black;
+}
+
+#noticias a *:active {
+    text-decoration: none;
+	color: black;
+}
+
+#news1:focus {
+	outline:none;
+}
+
+#boton1 {
+	margin-left: 14px;
+	background-color:#333;
+	color:#f0ad4e;
+	border-color:#333;
+}
+
+#autoscroll {
+	display:none;
+	position:fixed;
+	height:34px;
+	text-decoration: none;
+	border-color:#f0ad4e;
+	z-index:999;	
+}
+
+#autoscroll:focus {
+	background-color:#f0ad4e;
+}
+
+#autoscroll:active {
+	background-color:#f0ad4e;
+}
+	
+#botonVolver {
+	display:none;
+	position:fixed;
+	height:46px;
+	bottom:13px;
+	right:14px;
+	z-index:999;
+    cursor: pointer;
+}
+
+#botonVolver img {
+	height:100%;
+	max-height:100%;
+}
+
+#pie {
+	position:fixed;
+	bottom:0;
+	width:100%;
+	height:14px;
+	color:white;
+	background-color:#333;
+	text-align:left;
+	font-family:Verdana;
+	font-size:0.7em;
+	padding-right:2%;
+	z-index:1000;
+}
+
+#loading {
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:rgba(51,51,51,0.6);
+	z-index:9999;
+}
+
+#loading img {
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-100px;
+	margin-left:-100px;
+	opacity:1;
+	width:200px;
+	max-width:200px;
+	max-height:200px;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+
+
+/* -----------------------------------------------------------------------------------------*/
+
+@media (min-width:768px) and (max-width:991px) {
+.jumbotron {
+	padding-top:20px;
+	padding-bottom:20px;	
+	}
+#logo {
+	max-height:100px;	
+	}
+
+.navbar {
+	font-size:0.8em;	
+}
+
+h1, h2 {
+	color:white;
+	background-color:#333;
+	font-size:2.7em; 
+}
+
+h3 {
+	font-size:2em;
+}
+
+p {
+	font-size:1.2em; 
+}
+
+#fecha {
+	font-size:0.7em;	
+}
+	
+}
+
+/* -----------------------------------------------------------------------------------------*/
+
+@media (min-width:992px) {
+
+.jumbotron {	
+	padding-top:40px;
+	padding-bottom:40px;
+}
+
+.navbar {
+	font-size:1.2em;	
+}
+
+h1, h2 {
+	color:white;
+	background-color:#333;
+	font-size:2.7em;
+}
+
+h3 {
+	font-size:2em;
+}
+
+p {
+	font-size:1.2em; 
+}
+
+#fecha {
+	font-size:0.8em;	
+}
+	
+}
+
+/* -----------------------------------------------------------------------------------------*/
+
+@media(min-width:768px) {
+
+.jumbotron {
+	background-image: url(../img/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+	text-align:center;
+	margin-bottom:0px;
+}
+
+.jumbotron img {
+	max-height:150px;
+}
+
+/*imagen al lado del boton - logo*/
+.navbar-header img {
+	display:none;
 }
 
 #margen { /* ------------ NO CAMBIAR ORDEN. DESPUÉS DE .tipo a{} --------------*/
@@ -107,52 +272,20 @@ p {
 	margin-top:15px;
 }
 
-.liGaleria {
-	padding-top:10px;
-	padding-bottom:10px;
-}
-
-/*---------------------*/
-
-.margenBoton {
-	margin-bottom:15px;
-}
-
 .thumbnail {
 	padding:18px;
 	border:2px solid #ddd;
 	border-radius:4px;
 }
 
-.new, .shortNew {
-	background-color:#f8faf9;
-}
-
 .shortNew:hover {
-	opacity:0.7;
-	background-color:#f0f8fa;
+    -ms-transform: scale(1.02, 1.02); /* IE 9 */
+    -webkit-transform: scale(1.02, 1.02); /* Safari */
+    transform: scale(1.02, 1.02);		
 }
 
 #noticias, #noticiaCompleta {
 	padding-right:340px;
-}
-
-#noticias a {
-    text-decoration: none;
-	color: black;
-}
-
-#noticias a *:active {
-    text-decoration: none;
-	color: black;
-}
-
-#noticias a *:link {
-    text-decoration: none;
-	color: black;
-}
-
-#noticias a *:visited {
 }
 
 .col-sm-6, .col-sm-12 {
@@ -169,108 +302,70 @@ p {
 	position:absolute; 
 	right:0px; 
 	width:320px;
+	/*height:615px;*/
 	padding:10px;
+	text-align:center;
 }
 
-#publicidad2 img{
-	max-width:300px;
-	
+#framePubli2{
+	width:300px;
+	height:600px;
+	border:solid;
+	border-color:#333;
+	border-bottom-width:1px;
 }
 
-#publicidad2:hover {	
+#framePubli2:hover {	
 	opacity:0.7;
 }
 
-/*--------------------------------*/
-
-#b3 span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-  font-family: 'Glyphicons Halflings';
-}
-#b3 span:after {
-  font-family: 'Glyphicons Halflings';
-  content: '\e171';
-  position: absolute;
-  opacity: 0;
-  top: -13px;
-  right: -20px;
-  transition: 0.5s;
-}
-
-#b3:hover span {
-  padding-right: 25px;
-}
-
-#b3:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-#b3 {
-  transition: all 0.5s;
-  cursor: pointer;
-}
-
-/*-------------------------------*/
-
-#pie {
-	position:fixed;
-	bottom:0;
-	width:100%;
-	color:white;
-	background-color:#333;
-	text-align:right;
-	font-family:Verdana;
-	font-size:0.7em;
-	padding-right:2%;
-}
-
 #boton1 {
-  margin:50px;
+	width:calc(100% - 340px);
+	margin-bottom: 30px;
 }
+
+#autoscroll {
+	bottom:30px;
+	right:90px;	
+}
+
+#botonVolver {
+	height:50px;
+	bottom:13px;
+	right:20px;
+}
+
 }
 
 
-/* -------------------  MOVIL  ----------------------*/
+/* ----------------------------------------  MOVIL  ----------------------------------------*/
 
 @media(max-width:767px) {
-	
-html, body{
-	height:100%;
-	padding:0px;
-	margin:0px;
-	font-family: 'Prompt', sans-serif;
-}
 
 .navbar {
-	font-family: 'Montserrat', sans-serif;	
+	font-family: 'Prompt', sans-serif;	
 }
 
-h1 {
+h1, h2 {
 	color:white;
 	background-color:#333;
+}
+
+h3 {
+	font-size:1.8em;
 }
 
 p {
 	font-family: 'Prompt', sans-serif;
+	font-size:1.1em;
+}
+
+#fecha {
+	font-size:0.7em;	
 }
 
 .jumbotron {
 	display:none;
-}
-
-/*---Fijar menu al hacer scroll---*/
-.affix {
-    top: 0;
-    width: 100%;
-    z-index: 9999 !important;
-}
-
-.affix + .container-fluid {
-    padding-top: 70px;
 }
 
 /*---boton oculto del menu. Header de la barra de navegacion---*/
@@ -299,7 +394,6 @@ p {
 	border-color:white;
 	margin-bottom:0;
 	outline-style:solid;
-	/*outline-offset:4px;*/
 	outline-width:1.5px;
 	outline-color:#333;
 }
@@ -326,10 +420,6 @@ p {
 	width:100%;
 	background-color:#333;
 }
-
-#inicio:hover {
-	color:white;
-}
 /*---menu---*/
 
 .navbar-inverse .navbar-nav>li>a {
@@ -341,52 +431,11 @@ p {
     opacity:0.5;
 }
 
-/*---menus desplegables---*/
-
-.navbar-inverse .navbar-nav .open .dropdown-menu>li {
-	border-bottom:dotted;	
-}
-
-.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
-	display:block;
-	color:black;
-	text-decoration:none;
-	text-indent: 20px;	
-}
-
-.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
-	/*background-color:#333;*/
-	color:white;	
-}
-
-.navbar-inverse .navbar-nav .open .dropdown-menu>li>a>img {
-	height:50px;
-	max-height:50px;
-	padding:5px;	
-}
-
-.navbar-inverse .navbar-nav .open .dropdown-menu>li>a>img:hover {
-    -ms-transform: scale(1.5, 1.5); /* IE 9 */
-    -webkit-transform: scale(1.5, 1.5); /* Safari */
-    transform: scale(1.5, 1.5);		
-}
-
 #margen { /* ------------ NO CAMBIAR ORDEN. DESPUÉS DE .tipo a{} --------------*/
 	padding-top:16px;
 	padding-bottom:16px;
 	text-align:center;
 	text-indent:0;
-}
-
-.liGaleria {
-	padding-top:10px;
-	padding-bottom:10px;
-}
-
-/*---------------------*/
-
-.margenBoton {
-	margin-bottom:15px;
 }
 
 .thumbnail {
@@ -399,99 +448,46 @@ p {
 	background-color:#f8faf9;
 }
 
-.shortNew:hover {
-	opacity:0.7;
-	background-color:#f0f8fa;
-}
-
 #contenido {
 	padding:0;
 }
 
-#noticias a {
-    text-decoration: none;
-	color: black;
-}
-
-#noticias a *:active {
-    text-decoration: none;
-	color: black;
-}
-
-#noticias a *:link {
-    text-decoration: none;
-	color: black;
-}
-
-#noticias a *:visited {
-}
-
-/*revisar medidas*/
 #publicidad1 {
-	padding:4%;
-	margin-bottom:4%;
-	border-bottom:dotted;
+	padding:0;
+	margin-top:10px;
+	margin-bottom:10px;
 	display:block;
-	height:320px;
+	text-align:center;
 }
 
-#publicidad1:hover {	
-	opacity:0.7;
+#publicidad1 iframe {
+	width:320px; 
+	height:100px;
+	border:solid;
+	border-color:#333;
+	border-bottom-width:1px;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 #publicidad2 {
 	display:none;
 }
 
-/*--------------------------------*/
-
-#b3 span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-  font-family: 'Glyphicons Halflings';
-}
-
-#b3 span:after {
-  font-family: 'Glyphicons Halflings';
-  content: '\e171';
-  position: absolute;
-  opacity: 0;
-  top: -13px;
-  right: -20px;
-  transition: 0.5s;
-}
-
-#b3:hover span {
-  padding-right: 25px;
-}
-
-#b3:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-#b3 {
-  transition: all 0.5s;
-  cursor: pointer;
-}
-
-/*-------------------------------*/
-
 #boton1 {
-  margin:50px;
+	width:calc(100% - 28px);
+	margin-bottom: 80px;
 }
 
-#pie {
-	position:fixed;
-	bottom:0;
-	width:100%;
-	color:white;
-	background-color:#333;
-	text-align:right;
-	font-family:Verdana;
-	font-size:0.7em;
-	padding-right:2%;
-}	
+#autoscroll {
+	bottom:25px;
+	right:74px;	
+}
+	
+#botonVolver {
+	height:46px;
+	bottom:13px;
+	right:14px;
+}
+	
 } 
