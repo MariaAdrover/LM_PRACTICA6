@@ -84,13 +84,13 @@ $(document).ready(function() {
 			ajustarPadding();
 		}
 		
-		if (location.href=='file:///C:/Users/miaad/Desktop/LM_P6_v0.3/news.html' && auto) {
+		if (location.href=='https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.3/news.html' && auto) {
 			if ($(window).scrollTop() + $(window).height() >= $(document).height() - offset) { /*-------REVISAR offset*/
 				if (data < 6) {
 					/*Mostrar ventana de carga*/
 					$('#loading').show();
 					/*Cargar noticias*/
-					$.getJSON( 'https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.2/data/data' + data + '.json', function(jsonObject) {
+					$.getJSON( 'https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.3/data/data' + data + '.json', function(jsonObject) {
 					afegirBloc(jsonObject);
 					/*Ocultar ventana de carga*/
 					$('#loading').hide();
