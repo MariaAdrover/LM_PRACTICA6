@@ -3,6 +3,10 @@ var offsetNav;
 var finPubli;
 var auto=false;
 
+var posScroll;
+var x;
+var margin;
+
 /* $(function(){...}); --> window.onload = function() {...};*/
 $(document).ready(function() {	
 	
@@ -136,11 +140,13 @@ function afegirBloc(jsonObject) {
 }
 
 function ajustarPadding() {
-	var padding = $('#divMenu').height();
-	if ($(window).scrollTop() >= $('.jumbotron').innerHeight()) {
-		$('#contenido').css('padding-top', padding + 30);
+	posScroll = $(window).scrollTop();
+	margin = $('nav').outerHeight(true);
+	x = $('.jumbotron').innerHeight();
+	if (posScroll > x) {
+		$('#contenido').css('margin-top', margin);
 	} else {
-		$('#contenido').css('padding-top', 0);
+		$('#contenido').css('margin-top', 0);
 	}
 }
 	
