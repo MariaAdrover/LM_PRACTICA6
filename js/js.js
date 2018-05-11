@@ -40,7 +40,7 @@ $(document).ready(function() {
 	/*Cargar noticias al pulsar boton */
 	$('#boton1').click(function() {
 		if (data < 6) {
-			$.getJSON( 'https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.2/data/data' + data + '.json', function(jsonObject) {
+			$.getJSON( 'https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.3/data/data' + data + '.json', function(jsonObject) {
 				afegirBloc(jsonObject);
 			});
 			data++;
