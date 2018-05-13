@@ -84,7 +84,7 @@ $(document).ready(function() {
 			ajustarPadding();
 		}
 		
-		if (location.href=='https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/news.html' && auto) {
+		if (location.href=='file:///C:/Users/miaad/Desktop/LM_P6_v0.4/news.html' && auto) {
 			if ($(window).scrollTop() + $(window).height() >= $(document).height() - offset) { /*-------REVISAR offset*/
 				if (data < 6) {
 					/*Mostrar ventana de carga*/
@@ -133,7 +133,7 @@ function afegirBloc(jsonObject) {
 					+ '<picture>'
 						+ '<source srcset="' + item.imagenXs + '" media="(max-width: 400px)">'
 						+ '<source srcset="' + item.imagen + '" media="(min-width: 401px)">'
-						+ '<img src="' + item.imagen + '" class="img-responsive" alt="' + item.alt + '">'
+						+ '<img src="' + item.imagen + '" class="img-responsive center-block" alt="' + item.alt + '">'
 					+ '</picture>'
 				+ '</div>'
 			+ '</div>'
