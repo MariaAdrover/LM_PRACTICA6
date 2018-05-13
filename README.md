@@ -1,6 +1,15 @@
 # LM_PRACTICA6
 Página de noticias
 
+### VERSIÓN 0.4 
+
+> * Enlace a la página principal de [NOTICIAS](https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/news.html)
+> * Enlace a la página de la [NOTICIA 1](https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/news1.html)
+> * Enlace a la página de la [NOTICIA 2](https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/news2.html)
+
+* He utilizado la etiqueta <picture> en lugar de <img> para optimizar la carga de las imágenes de las reseñas de las noticias. Para dispositivos de hasta 400px se cargan imágenes de 330px de ancho y para el resto, de 500px de ancho.
+ * Todas las imágenes están comprimidas con tinyPNG.
+
 ### VERSIÓN 0.3 
 
 > * Enlace a la página principal de [NOTICIAS](https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.3/news.html)
