@@ -40,8 +40,12 @@ $(document).ready(function() {
 	/*Cargar noticias al pulsar boton */
 	$('#boton1').click(function() { /*revisar EL BOTON HA DE ESTAR OPERATIVO SOLO SI EL AUTOSCROLL ESTA DESACTIVADO???*/
 		if (data < 6) {
+			/*Mostrar ventana de carga*/
+			$('#loading').show();
 			$.getJSON( 'https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/data/data' + data + '.json', function(jsonObject) {
 				afegirBloc(jsonObject);
+				/*Ocultar ventana de carga*/
+				$('#loading').hide();
 			});
 			data++;
 		} else {
@@ -61,6 +65,7 @@ $(document).ready(function() {
 	});	
 	
 	/*Mostrar/Ocultar gif de carga
+	//-------------------quitar
 	$(document).ajaxStart(function(){
 		$('#loading').show();
 	});
@@ -72,10 +77,6 @@ $(document).ready(function() {
 	
 	//-------------------quitar
 	//$('#loading').show();
-	
-	/*TO DO: CREAR FUNCION onScroll*/
-	/*Cargar noticias al hacer scroll*/	
-	const offset = 50; /*REVISAR Y QUITAR*/
 	$(window).scroll(function() {
 		
 		/*Ajustar padding del div de contenido para que no de tirones al hacer scroll*/
@@ -84,16 +85,16 @@ $(document).ready(function() {
 			ajustarPadding();
 		}
 		
-		if (location.href=='file:///C:/Users/miaad/Desktop/LM_P6_v0.4/news.html' && auto) {
-			if ($(window).scrollTop() + $(window).height() >= $(document).height() - offset) { /*-------REVISAR offset*/
+		if (location.href=='https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/news.html' && auto) {
+			if ($(window).scrollTop() + $(window).height() >= $(document).height() - 50) { /*-------REVISAR offset*/
 				if (data < 6) {
 					/*Mostrar ventana de carga*/
 					$('#loading').show();
 					/*Cargar noticias*/
 					$.getJSON('https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/data/data' + data + '.json', function(jsonObject) {
-					afegirBloc(jsonObject);
-					/*Ocultar ventana de carga*/
-					$('#loading').hide();
+						afegirBloc(jsonObject);
+						/*Ocultar ventana de carga*/
+						$('#loading').hide();
 					});
 					data++;
 				} else {
