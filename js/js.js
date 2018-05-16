@@ -7,6 +7,9 @@ var posScroll;
 var x;
 var margin;
 
+var foto = 5; /*revisar, añadido cuando añades noticias*/
+var fotos = [];
+
 /* $(function(){...}); --> window.onload = function() {...};*/
 $(document).ready(function() {	
 	
@@ -25,7 +28,9 @@ $(document).ready(function() {
 	
 	/*El menu NO es fijo para dispositivos de menos de 667px*/
 	if ((window.matchMedia('(max-width: 767px)').matches)) {		
-		$('nav').attr('data-spy', '');
+		/*$('nav').attr('data-spy', '');*/
+		$('nav').removeAttr('data-spy');
+		$('nav').removeAttr('data-offset-top'); /*REVISAR*/
 	}
 	
 	/*-----funcion boton volver------*/
@@ -35,6 +40,24 @@ $(document).ready(function() {
 		} else {			
 			$('#botonMenu').focus();
 		}		
+	});
+	
+	/*detectar source de imagen*/
+	
+	$(document).on("click", "picture", function(evt){
+       /*alert($(evt.target).attr("src"));*/
+	   $("#bigImg img").attr("src","img/n7big.jpg");
+	   $("#bigImg").modal("show");
+	   /*var top = ($(window).height()- $("#bigImg img").height())/2;
+	   var left = -((($("#bigImg img").width())/2)+20);
+	   $("#bigImg div").attr("width",$("#bigImg img").height());
+	   $("#bigImg div").attr("top",top);
+	   $("#bigImg div").attr("margin-left",left);*/
+	});
+	
+	$("#bigImg").click(function(){
+		/*$("#bigImg").hide();*/
+		/*$("#bigImg").modal("hide");*/
 	});
 	
 	/*Cargar noticias al pulsar boton */
@@ -79,14 +102,14 @@ $(document).ready(function() {
 	//$('#loading').show();
 	$(window).scroll(function() {
 		
-		/*Ajustar padding del div de contenido para que no de tirones al hacer scroll*/
+		/*Ajustar padding del div de contenido para que no de tirones al hacer scroll y fijarse el menú arriba*/
 		
 		if (window.matchMedia('(min-width:768px)').matches) {
 			ajustarPadding();
 		}
 		
-		if (location.href=='https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/news.html' && auto) {
-			if ($(window).scrollTop() + $(window).height() >= $(document).height() - 50) { /*-------REVISAR offset*/
+		if (location.href=='file:///C:/Users/miaad/Desktop/LM_P6_v0.4/news.html' && auto) {
+			if ($(window).scrollTop() + $(window).height() >= $(document).height() - 30) { /*-------REVISAR offset*/
 				if (data < 6) {
 					/*Mostrar ventana de carga*/
 					$('#loading').show();
@@ -126,19 +149,17 @@ function afegirBloc(jsonObject) {
 		$('.row:last').append(
 			'<div class="col-sm-12 col-md-6">'
 				+ '<div class="thumbnail shortNew">'
-					+ '<a href="#">'
-						+ '<h2 class="text-center">' + item.titulo + '</h2>'
-						+ '<p class="text-right fecha">' + item.fecha + '</p>'
-						+ '<p class="text-justify">' + item.texto + '</p>'				
-					+ '</a>'
-					+ '<picture>'
-						+ '<source srcset="' + item.imagenXs + '" media="(max-width: 400px)">'
+					+ '<h2 class="text-center"><a href="">' + item.titulo + '</a></h2>'
+					+ '<p class="text-right fecha">' + item.fecha + '</p>'
+					+ '<p class="text-justify">' + item.texto + '</p>'
+					+ '<picture id="' + foto +'">' /*Revisar id. añadido para saber cual es la imagen*/
+					+ '<source srcset="' + item.imagenXs + '" media="(max-width: 400px)">'
 						+ '<source srcset="' + item.imagen + '" media="(min-width: 401px)">'
-						+ '<img src="' + item.imagen + '" class="img-responsive center-block" alt="' + item.alt + '">'
 					+ '</picture>'
 				+ '</div>'
 			+ '</div>'
 		);
+		foto++; /*revisar, añadido para ampliar fotos*/
 	});
 	$('#noticias').append('</div>');
 }

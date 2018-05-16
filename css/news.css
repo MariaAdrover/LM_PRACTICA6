@@ -72,7 +72,7 @@ html, body{
 
 #noticias a {
     text-decoration: none;
-	color: black;
+	color: white;
 }
 
 #noticias a *:active {
@@ -159,6 +159,36 @@ html, body{
 	max-width:200px;
 	max-height:200px;
 }
+
+/*revisar, añadido para ampliar imagen*/
+/*#bigImg {
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:rgba(51,51,51,0.7);
+	z-index:9999;	
+}
+
+#bigImg div{
+	position:absolute;
+	top:50%;
+	left:50%;
+	max-width:100%;
+	max-height:100%;	
+}
+
+#bigImgDiv img{
+}*/
+
+.modal-dialog button{
+	background-color:white;
+	color:orange;
+	font-size:3em;
+}
+
 
 #noticiaCompleta img {
 	margin-top:20px;
