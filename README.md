@@ -7,7 +7,7 @@ Página de noticias
 > * Enlace a la página de la [NOTICIA 1](https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/news1.html)
 > * Enlace a la página de la [NOTICIA 2](https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/news2.html)
 
-* He utilizado la etiqueta <picture> en lugar de <img> para optimizar la carga de las imágenes de las reseñas de las noticias. Para dispositivos de hasta 400px se cargan imágenes de 330px de ancho y para el resto, de 500px de ancho.
+* He utilizado la etiqueta ```<picture>``` en lugar de ```<img>``` para optimizar la carga de las imágenes de las reseñas de las noticias. Para dispositivos de hasta 400px se cargan imágenes de 330px de ancho y para el resto, de 500px de ancho.
  * Todas las imágenes están comprimidas con tinyPNG.
 
 ### VERSIÓN 0.3 
@@ -17,7 +17,7 @@ Página de noticias
 > * Enlace a la página de la [NOTICIA 2](https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.3/news2.html)
 
 * ADAPTABILIDAD PARA DISPOSITIVOS DE DIFERENTES MEDIDAS:
-He modificado la disposición y tamaño de los elementos para garantizar la adaptabilidad a tres anchos diferentes. En las versiones de 768px o más he añadido un widget de previsión meteorológica, ya que pienso que es útil para el usuario teniendo en cuenta la temática de la página.
+He modificado la disposición y tamaño de los elementos para adaptar la página a tres anchos diferentes. En las versiones de 768px o más he añadido un widget de previsión meteorológica, ya que pienso que es útil para el usuario teniendo en cuenta la temática de la página.
   * Dispositivos de 992 píxeles de ancho o más:
     * Cabecera con el logo de la página.
     * Barra de navegación: queda fijada en la parte superior de la pantalla al hacer scroll, según las dimensiones del dispositivo.
