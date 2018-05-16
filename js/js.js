@@ -108,7 +108,7 @@ $(document).ready(function() {
 			ajustarPadding();
 		}
 		
-		if (location.href=='file:///C:/Users/miaad/Desktop/LM_P6_v0.4/news.html' && auto) {
+		if (location.href=='https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/news.html' && auto) {
 			if ($(window).scrollTop() + $(window).height() >= $(document).height() - 30) { /*-------REVISAR offset*/
 				if (data < 6) {
 					/*Mostrar ventana de carga*/
