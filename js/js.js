@@ -152,9 +152,10 @@ function afegirBloc(jsonObject) {
 					+ '<h2 class="text-center"><a href="">' + item.titulo + '</a></h2>'
 					+ '<p class="text-right fecha">' + item.fecha + '</p>'
 					+ '<p class="text-justify">' + item.texto + '</p>'
-					+ '<picture id="' + foto +'">' /*Revisar id. añadido para saber cual es la imagen*/
-					+ '<source srcset="' + item.imagenXs + '" media="(max-width: 400px)">'
+					+ '<picture>' /*Revisar id. añadido para saber cual es la imagen*/
+						+ '<source srcset="' + item.imagenXs + '" media="(max-width: 400px)">'
 						+ '<source srcset="' + item.imagen + '" media="(min-width: 401px)">'
+						+ '<img  id="' + foto + '" src="' + item.imagen + '" class="img-responsive center-block" alt="' + item.alt +'"/>'
 					+ '</picture>'
 				+ '</div>'
 			+ '</div>'
