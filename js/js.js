@@ -45,19 +45,14 @@ $(document).ready(function() {
 	/*detectar source de imagen*/
 	
 	$(document).on("click", "picture", function(evt){
-       /*alert($(evt.target).attr("src"));*/
-	   $("#bigImg img").attr("src","img/n7big.jpg");
+	   var urlImg = 'img/n' + ($(evt.target).attr("id")) + 'big.jpg';
+	   $("#bigImg img").attr("src",urlImg);
 	   $("#bigImg").modal("show");
-	   /*var top = ($(window).height()- $("#bigImg img").height())/2;
-	   var left = -((($("#bigImg img").width())/2)+20);
-	   $("#bigImg div").attr("width",$("#bigImg img").height());
-	   $("#bigImg div").attr("top",top);
-	   $("#bigImg div").attr("margin-left",left);*/
-	});
-	
-	$("#bigImg").click(function(){
-		/*$("#bigImg").hide();*/
-		/*$("#bigImg").modal("hide");*/
+	   
+	   /*Tamaño visor de imágenes*/
+		if (window.matchMedia('(min-width:768px)').matches) {
+			ajustarVisor();
+		}
 	});
 	
 	/*Cargar noticias al pulsar boton */
@@ -87,6 +82,8 @@ $(document).ready(function() {
 		}
 	});	
 	
+	
+	
 	/*Mostrar/Ocultar gif de carga
 	//-------------------quitar
 	$(document).ajaxStart(function(){
@@ -108,7 +105,7 @@ $(document).ready(function() {
 			ajustarPadding();
 		}
 		
-		if (location.href=='https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/news.html' && auto) {
+		if (location.href=='file:///C:/Users/miaad/Desktop/LM_P6_v0.4/news.html' && auto) {
 			if ($(window).scrollTop() + $(window).height() >= $(document).height() - 30) { /*-------REVISAR offset*/
 				if (data < 6) {
 					/*Mostrar ventana de carga*/
@@ -176,3 +173,7 @@ function ajustarPadding() {
 	}
 }
 	
+function ajustarVisor() {
+	var ancho = $("#bigImg img").width() + 'px';
+	$(".modal-dialog").css("width",900);	
+}
