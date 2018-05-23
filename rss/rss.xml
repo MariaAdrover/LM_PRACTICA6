@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version='2.0'>
+<rss version='2.0' xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
+	<atom:link href="https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/rss/rss.xml" rel="self" type="application/rss+xml"/>
 	<title>ClimbArt - Escalada deportiva, clásica, alpinismo, hielo, bloque, competiciones</title>
 	<link>https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/news.html</link>
 	<description>ClimbArt - Últimas noticias sobre escaladores, escalada deportiva, clásica, alpinismo, hielo, bloque y competiciones.</description>
@@ -9,26 +10,27 @@
 		<link>https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/news.html</link>
 		<url>https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/img/logo.png</url>
 	</image>
-	<atom:link href="https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/rss/rss.xml" rel="self" type="application/rss+xml"/>
 	<item>
 		<title>ClimbArt - Patxi Usobiaga encadena Pachamama 9a+/b</title>
+        <guid>https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/news1.html</guid>
 		<link>https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/news1.html</link>
 		<description>		
 			<![CDATA[<img src="https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/img/n1big.jpg" alt="Patxi Usobiaga">
 			]]>
 			Patxi Usobiaga encadena Pachamama 9a+/b en Oliana (España). ClimbArt. Noticia y vídeo sobre escalada.
 		</description>
-		<pubDate>Wed, 25 April 2018 13:38:16 +0200</pubDate>
+		<pubDate>Wed, 25 Apr 2018 13:38:16 +0200</pubDate>
 	</item>
 	<item>
 		<title>ClimbArt - Chris Sharma encadena Big fish 8c+/9a</title>
+        <guid>https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/news2.html</guid>
 		<link>https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/news2.html</link>
 		<description>		
 			<![CDATA[<img src="https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/img/n2big.jpg" alt="Chris Sharma">
 			]]>
 			Chris Sharma completa su trilogía de psicobloc y encadena ‘Big fish’, vía de 8c+/9a en Sóller, Mallorca (España). ClimbArt. Noticia y vídeo sobre escalada.
 		</description>
-		<pubDate>Sat, 14 April 2018 13:00:10 +0200</pubDate>  
+		<pubDate>Sat, 14 Apr 2018 13:00:10 +0200</pubDate>  
 	</item>
 </channel>
 </rss>
