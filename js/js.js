@@ -7,8 +7,7 @@ var posScroll;
 var x;
 var margin;
 
-var foto = 5; /*revisar, añadido cuando añades noticias*/
-var fotos = [];
+var foto = 5; 
 
 /* $(function(){...}); --> window.onload = function() {...};*/
 $(document).ready(function() {	
@@ -26,7 +25,7 @@ $(document).ready(function() {
 	offsetNav=navBar.offset();
 	$(".navbar-inverse").attr('data-offset-top', offsetNav.top);	
 	
-	/*El menu NO es fijo para dispositivos de menos de 667px*/
+	/*El menu NO es fijo para dispositivos de menos de 768px*/
 	if ((window.matchMedia('(max-width: 767px)').matches)) {		
 		/*$('nav').attr('data-spy', '');*/
 		$('nav').removeAttr('data-spy');
@@ -42,8 +41,8 @@ $(document).ready(function() {
 		}		
 	});
 	
-	/*detectar source de imagen*/
-	
+	/*Evento al clicar sobre una imagen*/
+	/*Mostrar/ocultar modal*/	
 	$(document).on("click", "picture", function(evt){
 	   var urlImg = 'img/n' + ($(evt.target).attr("id")) + 'big.jpg';
 	   $("#bigImg img").attr("src",urlImg);
@@ -82,30 +81,15 @@ $(document).ready(function() {
 		}
 	});	
 	
-	
-	
-	/*Mostrar/Ocultar gif de carga
-	//-------------------quitar
-	$(document).ajaxStart(function(){
-		$('#loading').show();
-	});
-	$(document).ajaxSuccess(function(){
-		$('#loading').hide();
-	});
-	*/
-
-	
-	//-------------------quitar
-	//$('#loading').show();
+	/*Cargar noticias al hacer scroll*/	
 	$(window).scroll(function() {
 		
-		/*Ajustar padding del div de contenido para que no de tirones al hacer scroll y fijarse el menú arriba*/
-		
+		/*Ajustar padding del div de contenido para que no de tirones al hacer scroll y fijarse el menú arriba*/		
 		if (window.matchMedia('(min-width:768px)').matches) {
 			ajustarPadding();
 		}
 		
-		if (location.href=='https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/news.html' && auto) {
+		if (location.href=='file:///C:/Users/miaad/Desktop/LM_P6_v0.4/news.html' && auto) {
 			if ($(window).scrollTop() + $(window).height() >= $(document).height() - 30) { /*-------REVISAR offset*/
 				if (data < 6) {
 					/*Mostrar ventana de carga*/
@@ -123,7 +107,7 @@ $(document).ready(function() {
 			}
 		}
 		
-		/*Mostrar/Ocultar botones AutoScroll y volver*/
+		/*Mostrar/Ocultar botones AutoScroll y volver arriba*/
 		finPubli=200+offsetNav.top;
 		
 		if ($(window).scrollTop()>finPubli) {
@@ -149,7 +133,7 @@ function afegirBloc(jsonObject) {
 					+ '<h2 class="text-center"><a href="">' + item.titulo + '</a></h2>'
 					+ '<p class="text-right fecha">' + item.fecha + '</p>'
 					+ '<p class="text-justify">' + item.texto + '</p>'
-					+ '<picture>' /*Revisar id. añadido para saber cual es la imagen*/
+					+ '<picture>'
 						+ '<source srcset="' + item.imagenXs + '" media="(max-width: 400px)">'
 						+ '<source srcset="' + item.imagen + '" media="(min-width: 401px)">'
 						+ '<img  id="' + foto + '" src="' + item.imagen + '" class="img-responsive center-block" alt="' + item.alt +'"/>'
@@ -157,7 +141,7 @@ function afegirBloc(jsonObject) {
 				+ '</div>'
 			+ '</div>'
 		);
-		foto++; /*revisar, añadido para ampliar fotos*/
+		foto++;
 	});
 	$('#noticias').append('</div>');
 }
