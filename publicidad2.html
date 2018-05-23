@@ -20,7 +20,7 @@
 				imagenes[2] = "img/publi2c.jpg";
 				
 				function cambiar() {
-					$("div").animate({
+					$("#frame").animate({
 						height: '+=300px',
 						width: '+=150px'},
 						1000,
@@ -34,19 +34,26 @@
 					if (contador == max) {
 						contador = 0;
 					}
-					$("div").css("width","300px");
-					$("div").css("height","600px");
+					$("#frame").css("width","300px");
+					$("#frame").css("height","600px");
 					$("img").attr("src", imagenes[contador]);
 					$("img").fadeIn(1300);
 				}				
 			}
 		</script>
 		<style>
-			div {
+			#container {
+				width:300px; 
+				height:600px;
+				max-width:100%;
+				max-height:100%;
+				overflow:hidden;
+				}
+			#frame {
 				width:300px; 
 				height:600px;
 				}
-			div img {
+			img {
 				width:100%;
 				max-width:100%;
 				max-height:100%;
@@ -54,8 +61,10 @@
 		</style>
     </head>
     <body>
-		<div>
+		<div id="container">
+		<div id="frame">
 			<img src="img/publi2a.jpg" alt="..."/>
+		</div>
 		</div>
 	</body>
 </html>
