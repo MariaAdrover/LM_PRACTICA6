@@ -13,7 +13,7 @@
 			var imagenes = [];
 			var contador = 0;
 			var max = 3;
-			window.onload = function() {
+			$(document).ready(function() {
 				var timer = setInterval(cambiar, 5800);
 				imagenes[0] = "img/publi2a.jpg";
 				imagenes[1] = "img/publi2b.jpg";
@@ -39,7 +39,7 @@
 					$("img").attr("src", imagenes[contador]);
 					$("img").fadeIn(1300);
 				}				
-			}
+			});
 		</script>
 		<style>
 			#container {
