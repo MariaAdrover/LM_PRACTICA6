@@ -12,10 +12,6 @@ html, body{
     z-index: 999 !important;
 }
 
-.affix + .container-fluid {
-    /*padding-top: 70px;  ------------       está en el js. revisar valor?*/ 
-}
-
 #inicio {
 	color:orange;
 }
@@ -53,7 +49,7 @@ html, body{
     transform: scale(1.5, 1.5);		
 }
 
-#margen { /* ------------ NO CAMBIAR ORDEN. DESPUÉS DE .tipo a{} --------------*/
+#margen { /* ------------ .tipo a{} --------------*/
 	padding-top:16px;
 	padding-bottom:16px;
 	text-align:center;
@@ -76,6 +72,10 @@ html, body{
 #noticias a {
     text-decoration: none;
 	color: white;
+}
+/* *************************************************************AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
+#noticias a:hover {
+	color:#f0ad4e;
 }
 
 #noticias a *:active {
@@ -168,8 +168,7 @@ html, body{
 }
 
 .modal-dialog {
-	max-width:95%;
-	max-height:95%;		
+	max-width:95%;	
 }
 
 #modalA {
@@ -300,6 +299,7 @@ p {
 	border-radius:4px;
 }
 
+/* *************************************************************AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
 .shortNew:hover {
     -ms-transform: scale(1.02, 1.02); /* IE 9 */
     -webkit-transform: scale(1.02, 1.02); /* Safari */

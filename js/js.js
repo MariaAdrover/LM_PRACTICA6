@@ -21,15 +21,14 @@ $(document).ready(function() {
 	});
 	
 	/*determinar a cuantos pixeles se fija la barra del menu*/
-	var navBar = $( ".navbar-collapse" );
+	var navBar = $(".navbar-collapse");
 	offsetNav=navBar.offset();
 	$(".navbar-inverse").attr('data-offset-top', offsetNav.top);	
 	
 	/*El menu NO es fijo para dispositivos de menos de 768px*/
-	if ((window.matchMedia('(max-width: 767px)').matches)) {		
-		/*$('nav').attr('data-spy', '');*/
+	if ((window.matchMedia('(max-width: 767px)').matches)) {
 		$('nav').removeAttr('data-spy');
-		$('nav').removeAttr('data-offset-top'); /*REVISAR*/
+		$('nav').removeAttr('data-offset-top');
 	}
 	
 	/*-----funcion boton volver------*/
@@ -89,16 +88,18 @@ $(document).ready(function() {
 			ajustarPadding();
 		}
 		
-		if (location.href=='https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/news.html' && auto) {
-			if ($(window).scrollTop() + $(window).height() >= $(document).height() - 30) { /*-------REVISAR offset*/
+		if (location.href=='file:///C:/Users/miaad/Desktop/LM_P6_v0.4/news.html' && auto) {
+			if ($(window).scrollTop() + $(window).height() >= $(document).height() - 100) { /*-------REVISAR offset*/
 				if (data < 6) {
 					/*Mostrar ventana de carga*/
 					$('#loading').show();
+					auto=false;
 					/*Cargar noticias*/
 					$.getJSON('https://rawgit.com/MariaAdrover/LM_PRACTICA6/v0.4/data/data' + data + '.json', function(jsonObject) {
 						afegirBloc(jsonObject);
 						/*Ocultar ventana de carga*/
 						$('#loading').hide();
+						auto=true;
 					});
 					data++;
 				} else {
