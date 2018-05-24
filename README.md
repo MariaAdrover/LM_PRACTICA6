@@ -59,13 +59,9 @@ He modificado la disposición y tamaño de los elementos para adaptar la página
 * PUBLICIDAD
   * He cambiado la estructura del documento para ajustar los espacios de los contenedores para la publicidad a las medidas que se pedían en las especificaciones, que finalmente quedarán de 300x600 en la versión de escritorio y de 320x100 en la versión para móvil. 
   * He diseñado 3 anuncios para la versión de escritorio y 3 para la versión para móvil.
-  * He codificado un .html para cada versión de publicidad poninedo las imágenes con ```javascript class="carousel slide"```, y en las páginas de noticias, en los espacios para la publicidad, he incluido un <iframe> que enlaza con la página de publicidad correspondiente
-#### // TO DO
-> * Añadir evento ```$(window).scroll();``` para la página news.html
-> * Revisar ADAPTABILIDAD
+  * He codificado un .html para cada versión de publicidad poninedo las imágenes con ```javascript class="carousel slide"```, y en las páginas de noticias, en los espacios para la publicidad, he incluido un <iframe> que enlaza con la página de publicidad correspondiente.
 
-
-### VERSIÓN 0.1 
+### VERSIÓN 0.1 (master)
 
 > * Enlace a la página principal de [NOTICIAS](https://rawgit.com/MariaAdrover/LM_PRACTICA6/master/news.html)
 > * Enlace a la página de la [NOTICIA 1](https://rawgit.com/MariaAdrover/LM_PRACTICA6/master/news1.html)
