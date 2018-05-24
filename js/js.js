@@ -88,7 +88,7 @@ $(document).ready(function() {
 			ajustarPadding();
 		}
 		
-		if (location.href=='file:///C:/Users/miaad/Desktop/LM_P6_v0.4/news.html' && auto) {
+		if (auto) {
 			if ($(window).scrollTop() + $(window).height() >= $(document).height() - 100) { /*-------REVISAR offset*/
 				if (data < 6) {
 					/*Mostrar ventana de carga*/
