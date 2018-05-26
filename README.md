@@ -70,10 +70,13 @@ He modificado la disposición y tamaño de los elementos para adaptar la página
 El tema que he escogido para la práctica de la página de noticias es el mundo de la escalada. 
 En esta versión he codificado la estructura básica de la página de reseñas de las noticias, y de las dos páginas con las noticias completas:
 * Versión escritorio:
+
+![diseño versión escritorio](https://rawgit.com/MariaAdrover/PRACTICA6_resources/master/design1.png)
   * Cabecera
   * Barra de navegación que queda fijada en la parte superior de la ventana al hacer scroll, con los siguientes elementos:
     * Acceso a una supuesta página principal del sitio web en la que aparecerían los últimos contenidos agregados de todas las categorías.
     * Menú desplegable que corresponde a la página de noticias de la práctica. Al desplegarlo, aparece un enlace que permitiría acceder a las reseñas de las noticias organizadas por diferentes modalidades de escalada. En la página de la práctica aparecen las últimas noticias añadidas (de todas las modalidades). En las páginas de la noticia completa aparece un enlace más para volver a la página general de noticias.
+    
     ![submenú noticias](https://rawgit.com/MariaAdrover/PRACTICA6_resources/master/menu1.png)
     * Enlace a entrevistas
     * Enlace a artículos sobre material
@@ -85,6 +88,8 @@ En esta versión he codificado la estructura básica de la página de reseñas d
   * Bloques de noticias a la izquierda. Cada ```row``` tendrá dos reseñas de noticias del mismo ancho. La noticia completa ocupa todo el espacio a la izquierda de la publicidad.
   * Botón para cargar más noticias después del bloque de las reseñas (no aparece en las páginas de la noticia completa).
 * Versión móvil:
+
+![diseño versión móvil](https://rawgit.com/MariaAdrover/PRACTICA6_resources/masterdesign2.png)
   * Tiene los mismos elementos pero la barra de navegación se colapsa, quedando visible el logo de la página y un botón que da acceso a los elementos del menú al pulsar sobre él.
 
 He incluido un .css, he cambiado la fuente del texto, he diseñado un logo, y he seleccionado el texto e imágenes de las cuatro noticias precargadas que tendrá la página principal y de las dos noticias completas.
