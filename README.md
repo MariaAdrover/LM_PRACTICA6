@@ -32,3 +32,4 @@ He modificado la disposición y tamaño de los elementos para adaptar la página
 * El boton para activar/desactivar el autoscroll y el de ir arriba aparecen y desaparecen a partir de la segunda fila de noticias, para no ocupar espacio de visualización al cargar la página, y porque realmente son útiles cuando hemos hecho algo de scroll en el documento.
 * He hecho que se suavice el scroll del documento al fijarse la barra de navegación, cambiando el padding del bloque de contenido según las medidas de la cabecera. 
 * Creación de un div con un gif de carga que se activa mientras se cargan los contenidos del .json, impidiendo otras interacciones del usuario con elementos de la página hasta que no se ha cargado el contenido solicitado.
+* He añadido dos documentos .json más (se podrán hacer cinco cargas).
