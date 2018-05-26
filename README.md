@@ -71,7 +71,7 @@ El tema que he escogido para la práctica de la página de noticias es el mundo 
 En esta versión he codificado la estructura básica de la página de reseñas de las noticias, y de las dos páginas con las noticias completas:
 * Versión escritorio:
 
-![escritorio](https://rawgit.com/MariaAdrover/PRACTICA6_resources/master/design1.JPG)
+![escritorio](https://rawgit.com/MariaAdrover/PRACTICA6_resources/master/design1a.jpg)
   * Cabecera
   * Barra de navegación que queda fijada en la parte superior de la ventana al hacer scroll, con los siguientes elementos:
     * Acceso a una supuesta página principal del sitio web en la que aparecerían los últimos contenidos agregados de todas las categorías.
