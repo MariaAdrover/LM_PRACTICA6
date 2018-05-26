@@ -89,7 +89,7 @@ En esta versión he codificado la estructura básica de la página de reseñas d
   * Botón para cargar más noticias después del bloque de las reseñas (no aparece en las páginas de la noticia completa).
 * Versión móvil:
 
-![móvil](https://rawgit.com/MariaAdrover/PRACTICA6_resources/master/design2.JPG)
+![móvil](https://rawgit.com/MariaAdrover/PRACTICA6_resources/master/design2a.jpg)
   * Tiene los mismos elementos pero la barra de navegación se colapsa, quedando visible el logo de la página y un botón que da acceso a los elementos del menú al pulsar sobre él.
 
 He incluido un .css, he cambiado la fuente del texto, he diseñado un logo, y he seleccionado el texto e imágenes de las cuatro noticias precargadas que tendrá la página principal y de las dos noticias completas.
