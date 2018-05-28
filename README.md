@@ -73,7 +73,7 @@ El tema que he escogido para la práctica de la página de noticias es el mundo 
 En esta versión he codificado la estructura básica de la página de reseñas de las noticias, y de las dos páginas con las noticias completas:
 * Versión escritorio:
 
-![escritorio](https://rawgit.com/MariaAdrover/PRACTICA6_resources/master/design1a.jpg)
+  ![escritorio](https://rawgit.com/MariaAdrover/PRACTICA6_resources/master/design1a.jpg)
   * Cabecera
   * Barra de navegación que queda fijada en la parte superior de la ventana al hacer scroll, con los siguientes elementos:
     * Acceso a una supuesta página principal del sitio web en la que aparecerían los últimos contenidos agregados de todas las categorías.
@@ -91,7 +91,11 @@ En esta versión he codificado la estructura básica de la página de reseñas d
   * Botón para cargar más noticias después del bloque de las reseñas (no aparece en las páginas de la noticia completa).
 * Versión móvil:
 
-![móvil](https://rawgit.com/MariaAdrover/PRACTICA6_resources/master/design2a.jpg)
-  * Tiene los mismos elementos pero la barra de navegación se colapsa, quedando visible el logo de la página y un botón que da acceso a los elementos del menú al pulsar sobre él.
+  ![móvil](https://rawgit.com/MariaAdrover/PRACTICA6_resources/master/design2a.jpg)
+  * No aparece la cabecera
+  * La barra de navegación se colapsa, quedando visible el logo de la página y un botón que da acceso a los elementos del menú al pulsar sobre él. 
+  * La publicidad aparece justo después de la barra de navegación
+  * Tanto cada reseña de las noticias como las noticias completas ocupan todo el ancho de la pantalla.
+  * Botón para cargar más noticias después del bloque de las reseñas (no aparece en las páginas de la noticia completa).
 
 He incluido un .css, he cambiado la fuente del texto, he diseñado un logo, y he seleccionado el texto e imágenes de las cuatro noticias precargadas que tendrá la página principal y de las dos noticias completas.
